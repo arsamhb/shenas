@@ -1,0 +1,685 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+@font-face {
+	font-family: KalamehWeb;
+	font-style: normal;
+	font-weight: 100;
+	src: url('./font/Standard/WebFonts/fonts/woff2/KalamehWeb-Thin.woff2') format('woff2'),
+		/* FF39+,Chrome36+, Opera24+*/
+		url('./font/Standard/WebFonts/fonts/woff/KalamehWeb-Thin.woff') format('woff');
+	/* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+
+@font-face {
+	font-family: KalamehWeb;
+	font-style: normal;
+	font-weight: 200;
+	src: url('./font/Standard/WebFonts/fonts/woff2/KalamehWeb-ExtraLight.woff2') format('woff2'),
+		/* FF39+,Chrome36+, Opera24+*/
+		url('./font/Standard/WebFonts/fonts/woff/KalamehWeb-ExtraLight.woff') format('woff');
+	/* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+
+@font-face {
+	font-family: KalamehWeb;
+	font-style: normal;
+	font-weight: 300;
+	src: url('./font/Standard/WebFonts/fonts/woff2/KalamehWeb-Light.woff2') format('woff2'),
+		/* FF39+,Chrome36+, Opera24+*/
+		url('./font/Standard/WebFonts/fonts/woff/KalamehWeb-Light.woff') format('woff');
+	/* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+
+@font-face {
+	font-family: KalamehWeb;
+	font-style: normal;
+	font-weight: 500;
+	src: url('./font/Standard/WebFonts/fonts/woff2/KalamehWeb-Medium.woff2') format('woff2'),
+		/* FF39+,Chrome36+, Opera24+*/
+		url('./font/Standard/WebFonts/fonts/woff/KalamehWeb-Medium.woff') format('woff');
+	/* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+
+@font-face {
+	font-family: KalamehWeb;
+	font-style: normal;
+	font-weight: 600;
+	src: url('./font/Standard/WebFonts/fonts/woff2/KalamehWeb-Semibold.woff2') format('woff2'),
+		/* FF39+,Chrome36+, Opera24+*/
+		url('./font/Standard/WebFonts/fonts/woff/KalamehWeb-Semibold.woff') format('woff');
+	/* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+
+@font-face {
+	font-family: KalamehWeb;
+	font-style: normal;
+	font-weight: 800;
+	src: url('./font/Standard/WebFonts/fonts/woff2/KalamehWeb-ExtraBold.woff2') format('woff2'),
+		/* FF39+,Chrome36+, Opera24+*/
+		url('./font/Standard/WebFonts/fonts/woff/KalamehWeb-ExtraBold.woff') format('woff');
+	/* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+
+@font-face {
+	font-family: KalamehWeb;
+	font-style: normal;
+	font-weight: 900;
+	src: url('./font/Standard/WebFonts/fonts/woff2/KalamehWeb-Black.woff2') format('woff2'),
+		/* FF39+,Chrome36+, Opera24+*/
+		url('./font/Standard/WebFonts/fonts/woff/KalamehWeb-Black.woff') format('woff')
+		/* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+
+@font-face {
+	font-family: KalamehWeb;
+	font-style: normal;
+	font-weight: bold;
+	src: url('./font/Standard/WebFonts/fonts/woff2/KalamehWeb-Bold.woff2') format('woff2'),
+		/* FF39+,Chrome36+, Opera24+*/
+		url('./font/Standard/WebFonts/fonts/woff/KalamehWeb-Bold.woff') format('woff');
+	/* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+
+@font-face {
+	font-family: KalamehWeb;
+	font-style: normal;
+	font-weight: normal;
+	src: url('./font/Standard/WebFonts/fonts/woff2/KalamehWeb-Regular.woff2') format('woff2'),
+		/* FF39+,Chrome36+, Opera24+*/
+		url('./font/Standard/WebFonts/fonts/woff/KalamehWeb-Regular.woff') format('woff');
+	/* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+
+body {
+	direction: rtl;
+	max-width: 100vw;
+	font-family: KalamehWeb !important;
+	background: #FAFAFB;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button {
+	font-family: KalamehWeb !important;
+}
+
+.purple-gradient {
+	width: 100%;
+	height: 100vh;
+	border-radius: 100%;
+
+	opacity: 0.7;
+	background: #CFB3FD;
+	filter: blur(100px);
+
+	position: absolute;
+	top: -30vh;
+
+	z-index: -1;
+}
+
+.header {
+	width: 100%;
+	display: grid;
+	place-content: center;
+}
+
+.logo-top-center {
+	width: fit-content;
+	position: relative;
+}
+
+.logo-top-center svg {
+	position: absolute;
+	top: 32px;
+	right: -100px;
+}
+
+.logo-top-center h1 {
+	position: absolute;
+	top: 124px;
+
+	color: #474747;
+	text-align: center;
+	font-size: 48px;
+	font-weight: 600;
+}
+
+.header-description {
+	position: static;
+	width: 100%;
+	text-align: center;
+	margin-top: 210px;
+
+	color: #474747;
+	text-align: center;
+	font-size: 20px;
+	font-weight: 400;
+}
+
+.download-btn-holder {
+	width: 100%;
+	padding: 2rem;
+	display: grid;
+	place-content: center;
+}
+
+.top-download-btn {
+	padding: 8px 32px;
+	border-radius: 8px;
+	background: #701CF9;
+	border: none;
+
+	color: #FFF;
+	font-size: 16px;
+	font-weight: 500;
+	cursor: pointer;
+}
+
+.animated-stuff {
+	position: absolute;
+	width: 100%;
+	margin-top: 2.5rem;
+
+}
+
+/* LAYER 1 ON SPINNING IMAGES*/
+.animated-img-1-layer-1 {
+	width: 50px;
+	height: 50px;
+	margin: auto;
+	animation: GFG-1-1 20s infinite linear;
+	background-image: url("./img/cirvle1.png");
+}
+
+@keyframes GFG-1-1 {
+	0% {
+		transform: rotate(0deg) translateY(35vw) rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg) translateY(35vw) rotate(-360deg);
+	}
+}
+
+.animated-img-2-layer-1 {
+	width: 50px;
+	height: 50px;
+	margin: auto;
+	animation: GFG-2-1 20s infinite linear;
+	background-image: url("./img/cirvle1.png");
+}
+
+@keyframes GFG-2-1 {
+	0% {
+		transform: rotate(-60deg) translateY(35vw) rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(300deg) translateY(35vw) rotate(-360deg);
+	}
+}
+
+.animated-img-3-layer-1 {
+	width: 5px;
+	height: 5px;
+	margin: auto;
+	animation: GFG-3-1 20s infinite linear;
+}
+
+@keyframes GFG-3-1 {
+	0% {
+		transform: rotate(-120deg) translateY(35vw) rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(240deg) translateY(35vw) rotate(-360deg);
+	}
+}
+
+.animated-img-4-layer-1 {
+	width: 5px;
+	height: 5px;
+	margin: auto;
+	animation: GFG-4-1 20s infinite linear;
+}
+
+@keyframes GFG-4-1 {
+	0% {
+		transform: rotate(-180deg) translateY(35vw) rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(180deg) translateY(35vw) rotate(-360deg);
+	}
+}
+
+.animated-img-5-layer-1 {
+	width: 5px;
+	height: 5px;
+	margin: auto;
+	animation: GFG-5-1 20s infinite linear;
+}
+
+@keyframes GFG-5-1 {
+	0% {
+		transform: rotate(-240deg) translateY(35vw) rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(120deg) translateY(35vw) rotate(-360deg);
+	}
+}
+
+.animated-img-6-layer-1 {
+	width: 5px;
+	height: 5px;
+	margin: auto;
+	animation: GFG-6-1 20s infinite linear;
+}
+
+@keyframes GFG-6-1 {
+	0% {
+		transform: rotate(-300deg) translateY(35vw) rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(60deg) translateY(35vw) rotate(-360deg);
+	}
+}
+
+/* LAYER 2 ON SPINNING IMAGES*/
+.animated-img-1-layer-2 {
+	width: 5px;
+	height: 5px;
+	margin: auto;
+	animation: GFG-1-2 30s infinite linear;
+}
+
+@keyframes GFG-1-2 {
+	0% {
+		transform: rotate(-30deg) translateY(40vw) rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(330deg) translateY(40vw) rotate(-360deg);
+	}
+}
+
+.animated-img-2-layer-2 {
+	width: 5px;
+	height: 5px;
+	margin: auto;
+	animation: GFG-2-2 30s infinite linear;
+}
+
+@keyframes GFG-2-2 {
+	0% {
+		transform: rotate(-90deg) translateY(40vw) rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(270deg) translateY(40vw) rotate(-360deg);
+	}
+}
+
+.animated-img-3-layer-2 {
+	width: 5px;
+	height: 5px;
+	margin: auto;
+	animation: GFG-3-2 30s infinite linear;
+}
+
+@keyframes GFG-3-2 {
+	0% {
+		transform: rotate(-150deg) translateY(40vw) rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(210deg) translateY(40vw) rotate(-360deg);
+	}
+}
+
+.animated-img-4-layer-2 {
+	width: 5px;
+	height: 5px;
+	margin: auto;
+	animation: GFG-4-2 30s infinite linear;
+}
+
+@keyframes GFG-4-2 {
+	0% {
+		transform: rotate(-210deg) translateY(40vw) rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(150deg) translateY(40vw) rotate(-360deg);
+	}
+}
+
+.animated-img-5-layer-2 {
+	width: 5px;
+	height: 5px;
+	margin: auto;
+	animation: GFG-5-2 30s infinite linear;
+}
+
+@keyframes GFG-5-2 {
+	0% {
+		transform: rotate(-270deg) translateY(40vw) rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(90deg) translateY(40vw) rotate(-360deg);
+	}
+}
+
+.animated-img-6-layer-2 {
+	width: 5px;
+	height: 5px;
+	margin: auto;
+	animation: GFG-6-2 30s infinite linear;
+}
+
+@keyframes GFG-6-2 {
+	0% {
+		transform: rotate(-330deg) translateY(40vw) rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(30deg) translateY(40vw) rotate(-360deg);
+	}
+}
+
+/* LAYER 3 ON SPINNING IMAGES*/
+.animated-img-1-layer-3 {
+	width: 5px;
+	height: 5px;
+	margin: auto;
+	animation: GFG-1-3 25s infinite linear;
+}
+
+@keyframes GFG-1-3 {
+	0% {
+		transform: rotate(0deg) translateY(46vw) rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg) translateY(46vw) rotate(-360deg);
+	}
+}
+
+.animated-img-2-layer-3 {
+	width: 5px;
+	height: 5px;
+	margin: auto;
+	animation: GFG-2-3 25s infinite linear;
+}
+
+@keyframes GFG-2-3 {
+	0% {
+		transform: rotate(-60deg) translateY(46vw) rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(300deg) translateY(46vw) rotate(-360deg);
+	}
+}
+
+.animated-img-3-layer-3 {
+	width: 5px;
+	height: 5px;
+	margin: auto;
+	animation: GFG-3-3 25s infinite linear;
+}
+
+@keyframes GFG-3-3 {
+	0% {
+		transform: rotate(-120deg) translateY(46vw) rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(240deg) translateY(46vw) rotate(-360deg);
+	}
+}
+
+.animated-img-4-layer-3 {
+	width: 5px;
+	height: 5px;
+	margin: auto;
+	animation: GFG-4-3 25s infinite linear;
+}
+
+@keyframes GFG-4-3 {
+	0% {
+		transform: rotate(-180deg) translateY(46vw) rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(180deg) translateY(46vw) rotate(-360deg);
+	}
+}
+
+.animated-img-5-layer-3 {
+	width: 5px;
+	height: 5px;
+	margin: auto;
+	animation: GFG-5-3 25s infinite linear;
+}
+
+@keyframes GFG-5-3 {
+	0% {
+		transform: rotate(-240deg) translateY(46vw) rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(120deg) translateY(46vw) rotate(-360deg);
+	}
+}
+
+.animated-img-6-layer-3 {
+	width: 5px;
+	height: 5px;
+	margin: auto;
+	animation: GFG-6-3 25s infinite linear;
+}
+
+@keyframes GFG-6-3 {
+	0% {
+		transform: rotate(-300deg) translateY(46vw) rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(60deg) translateY(46vw) rotate(-360deg);
+	}
+}
+
+main {
+	margin-top: 60vh;
+	/* YOU NEED TO DO SOMETHING IN THIS SSECTIN */
+	height: max-content;
+	position: relative;
+}
+
+.top-content {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 3rem;
+	padding: 3rem 10vw;
+	margin-bottom: 5rem;
+}
+
+.top-text-content {
+	display: flex;
+	flex-direction: column;
+}
+
+.top-text-content h3 {
+	color: #282828;
+	font-size: 32px;
+	font-weight: 500;
+}
+
+.top-text-content p {
+	color: #474747;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 40px;
+}
+
+.content {
+	display: flex;
+	flex-direction: row;
+	padding: 5rem 15vw;
+	justify-content: center;
+	align-items: center;
+	gap: 3rem;
+}
+
+.text-content {
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+}
+
+.text-content h3 {
+	color: #282828;
+	font-size: 32px;
+	font-weight: 500;
+}
+
+.text-content h3 span {
+	color: #904EFA;
+}
+
+.text-content p {
+	color: #474747;
+	text-align: right;
+	font-size: 20px;
+	font-weight: 400;
+}
+
+.download-section {
+	border-radius: 32px;
+	background: #FFF;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 2rem;
+
+	height: 70vh;
+	margin: 2.5rem 5rem;
+	padding: 0 10%;
+
+	box-shadow: 0 10px 10px 10px #00000005;
+
+	position: relative;
+}
+
+.vector-1 {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.vector-2 {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+.download-section h3 {
+	color: #282828;
+	text-align: center;
+	font-size: 32px;
+	font-weight: 500;
+}
+
+.download-section p {
+	color: #474747;
+	text-align: center;
+	font-size: 20px;
+	font-weight: 400;
+}
+
+.download-btns-container {
+	display: flex;
+	flex-direction: row;
+	gap: 5rem;
+}
+
+.download-btns {
+	margin-top: 2rem;
+	padding: 8px 24px;
+	border-radius: 8px;
+	border: 1px solid #701CF9;
+	color: #282828;
+	text-align: center;
+	font-size: 18px;
+	font-weight: 500;
+	cursor: pointer;
+	background-color: transparent;
+}
+
+.footer {
+	width: 100%;
+	height: 50vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 2rem;
+
+	background-image: url('./img/footer-bg.png');
+	background-position: bottom;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+footer h3 {
+	color: #474747;
+	font-size: 20px;
+	font-weight: 400;
+}
+
+.footer-links {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 3rem;
+}
+
+.footer-links a {
+	color: #474747;
+	font-size: 16px;
+	font-weight: 500;
+	text-decoration: none;
+}
+
+/* CURVE LINE UNDER OTHER ELEMENTS STUFF */
+
+.SVG-container {
+	position: relative;
+}
+
+.SVG-container > svg{
+	position: absolute;
+	top: 17%;
+	width: 100%;
+	height: 100%;
+}
+
+@media only screen and (max-width: 992px) {}
