@@ -15,7 +15,7 @@ function makeMovingCircles() {
         border-radius : 100%
         margin: auto;
         animation: circular-movement-${i + 1}-${j + 1} ${
-        i == 0 ? "10s" : i == 1 ? "10s" : "10s"
+        i == 0 ? "90s" : i == 1 ? "100s" : "110s"
       } infinite linear;
         animation-direction: ${i == 1 ? "reverse" : "normal"}; 
         background-image: url('./img/circle${
