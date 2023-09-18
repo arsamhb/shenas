@@ -51,17 +51,10 @@ animation += `@keyframes circular-movement-${i + 1}-${j + 1} {
 
 $(document).ready(() => {
   setTimeout(() => {
-    // from top top to top content
     const mainHeight = document.getElementsByTagName("main")[0].offsetTop;
-    console.log(mainHeight);
-    // mainHeigh + hqight1 can be the top height of second content
     const height1 = document.getElementById("fadeInOne").offsetHeight;
-    console.log(height1);
-    // height2 + all the rest is the height of thrid content
     const height2 = document.getElementById("fadeInTwo").offsetHeight;
-    console.log(height2);
     const height3 = document.getElementById("fadeInThr").offsetHeight;
-    console.log(height3);
 
     $(window).scroll(()=>{
       const scrollPosition = $(window).scrollTop();
