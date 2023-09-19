@@ -1,10 +1,10 @@
 @keyframes circular-movement-1-1 {
 	0% {
-		transform: rotate(0deg) translateY(350px);
+		transform: rotate(0deg) translateY(350px) rotate(0deg);
 	}
 
 	100% {
-		transform: rotate(360deg) translateY(350px);
+		transform: rotate(360deg) translateY(350px) rotate(-360deg);
 	}
 }
 
@@ -571,11 +571,11 @@ footer h3 {
 @media screen and (max-width: 949px) {
 	@keyframes circular-movement-1-1 {
 		0% {
-			transform: rotate(0deg) translateY(425px);
+			transform: rotate(0deg) translateY(425px) rotate(0deg);
 		}
 
 		100% {
-			transform: rotate(360deg) translateY(425px);
+			transform: rotate(360deg) translateY(425px) rotate(-360deg);
 		}
 	}
 

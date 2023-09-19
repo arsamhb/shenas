@@ -58,10 +58,10 @@ $(document).ready(() => {
 
     $(window).scroll(()=>{
       const scrollPosition = $(window).scrollTop();
-      if(scrollPosition + 200 > mainHeight) {$("#fadeInOne").addClass("is-visible")}
-      if(scrollPosition + 200 > height1+mainHeight) {$("#fadeInTwo").addClass("is-visible")}
-      if(scrollPosition + 200 > height2+height1+mainHeight) {$("#fadeInThr").addClass("is-visible")}
-      if(scrollPosition + 200 > height3+height2+height1+mainHeight) {$("#fadeInFou").addClass("is-visible")}
+      if(scrollPosition + 350 > mainHeight) {$("#fadeInOne").addClass("is-visible")}
+      if(scrollPosition + 350 > height1+mainHeight) {$("#fadeInTwo").addClass("is-visible")}
+      if(scrollPosition + 350 > height2+height1+mainHeight) {$("#fadeInThr").addClass("is-visible")}
+      if(scrollPosition + 350 > height3+height2+height1+mainHeight) {$("#fadeInFou").addClass("is-visible")}
     })
   }, 1000);
 });
